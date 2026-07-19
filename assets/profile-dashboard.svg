@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="230" viewBox="0 0 900 230" role="img" aria-labelledby="title desc">
+  <title id="title">ZenSyntax 个人开发概览</title>
+  <desc id="desc">展示所在地、专业方向、完整系统数量、源码规模、软件著作权申请与文档资产。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1d2021"/><stop offset="1" stop-color="#282828"/></linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#fabd2f"/><stop offset="1" stop-color="#fe8019"/></linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <style>
+    .scan { animation: scan 5s ease-in-out infinite; }
+    .bar { animation: draw 2.2s ease-out both; }
+    .bar.d2 { animation-delay: .25s; }.bar.d3 { animation-delay: .5s; }.bar.d4 { animation-delay: .75s; }
+    .beacon { transform-box: fill-box; transform-origin: center; animation: beacon 2s ease-in-out infinite; }
+    @keyframes scan { 0%,100%{transform:translateX(0);opacity:.1}50%{transform:translateX(810px);opacity:.4} }
+    @keyframes draw { from{stroke-dashoffset:140}to{stroke-dashoffset:0} }
+    @keyframes beacon { 0%,100%{opacity:.5;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)} }
+    @media (prefers-reduced-motion:reduce){.scan,.bar,.beacon{animation:none}.bar{stroke-dashoffset:0}}
+  </style>
+  <rect x="1" y="1" width="898" height="228" rx="20" fill="url(#bg)" stroke="#504945" stroke-width="2"/>
+  <rect class="scan" x="44" y="17" width="2" height="196" fill="#fabd2f"/>
+  <text x="45" y="35" fill="#928374" font-family="Consolas,monospace" font-size="11" letter-spacing="2">ENGINEERING SNAPSHOT / 2026</text>
+  <text x="45" y="72" fill="#fabd2f" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">Tan Xiaomeng</text>
+  <text x="45" y="99" fill="#ebdbb2" font-family="Segoe UI,Arial,sans-serif" font-size="14">Java 后端开发 · 独立全栈交付</text>
+  <text x="45" y="126" fill="#bdae93" font-family="Segoe UI,Arial,sans-serif" font-size="12">广东海洋大学 · 计算机科学与技术</text>
+  <circle class="beacon" cx="51" cy="155" r="5" fill="#b8bb26" filter="url(#glow)"/>
+  <text x="65" y="159" fill="#d5c4a1" font-family="Segoe UI,Arial,sans-serif" font-size="12">广州 · Java · Distributed Systems · Full-stack Delivery</text>
+  <text x="45" y="191" fill="#928374" font-family="Consolas,monospace" font-size="11">2003 · 190 cm · cube ao5 sub 10</text>
+  <path d="M390 38 V196" stroke="#504945"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <g transform="translate(430 52)"><text fill="#fabd2f" font-size="22" font-weight="700">02</text><text x="50" y="0" fill="#ebdbb2" font-size="13">独立完成的系统</text><path d="M0 18 H140" stroke="#504945" stroke-width="4"/><path class="bar" d="M0 18 H140" stroke="url(#bar)" stroke-width="4" stroke-dasharray="140"/></g>
+    <g transform="translate(660 52)"><text fill="#fe8019" font-size="22" font-weight="700">14.5w</text><text x="72" y="0" fill="#ebdbb2" font-size="13">前后端源码</text><path d="M0 18 H140" stroke="#504945" stroke-width="4"/><path class="bar d2" d="M0 18 H140" stroke="url(#bar)" stroke-width="4" stroke-dasharray="140"/></g>
+    <g transform="translate(430 135)"><text fill="#d79921" font-size="22" font-weight="700">04</text><text x="50" y="0" fill="#ebdbb2" font-size="13">软件著作权申请</text><path d="M0 18 H140" stroke="#504945" stroke-width="4"/><path class="bar d3" d="M0 18 H140" stroke="url(#bar)" stroke-width="4" stroke-dasharray="140"/></g>
+    <g transform="translate(660 135)"><text fill="#83a598" font-size="22" font-weight="700">250+</text><text x="62" y="0" fill="#ebdbb2" font-size="13">文档与图表资产</text><path d="M0 18 H140" stroke="#504945" stroke-width="4"/><path class="bar d4" d="M0 18 H140" stroke="url(#bar)" stroke-width="4" stroke-dasharray="140"/></g>
+  </g>
+</svg>

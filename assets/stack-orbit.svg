@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270" role="img" aria-labelledby="title desc">
+  <title id="title">以 Java 和 Spring 为核心的技术栈轨道</title>
+  <desc id="desc">Java 与 Spring 位于中心，实时通信、数据中间件、客户端和工程交付环绕四周。</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#282828"/><stop offset="1" stop-color="#1d2021"/></linearGradient><filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <style>
+    .orbit{stroke-dasharray:5 10;animation:dash 5s linear infinite}.core{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite}.sat{animation:float 4s ease-in-out infinite}.sat.d2{animation-delay:-1s}.sat.d3{animation-delay:-2s}.sat.d4{animation-delay:-3s}.runner{transform-origin:450px 135px;animation:spin 9s linear infinite}
+    @keyframes dash{to{stroke-dashoffset:-75}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{transform:scale(.94)}50%{transform:scale(1.04)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+    @media(prefers-reduced-motion:reduce){.orbit,.core,.sat,.runner{animation:none}}
+  </style>
+  <rect x="1" y="1" width="898" height="268" rx="20" fill="url(#bg)" stroke="#504945" stroke-width="2"/>
+  <ellipse class="orbit" cx="450" cy="135" rx="310" ry="91" fill="none" stroke="#665c54" stroke-width="2"/>
+  <g class="runner"><circle cx="760" cy="135" r="6" fill="#fabd2f" filter="url(#glow)"/></g>
+  <g class="core"><circle cx="450" cy="135" r="65" fill="#3c3836" stroke="#fabd2f" stroke-width="2"/><circle cx="450" cy="135" r="53" fill="none" stroke="#d79921" stroke-opacity=".35"/><text x="450" y="128" fill="#fabd2f" font-family="Consolas,monospace" font-size="17" font-weight="700" text-anchor="middle">JAVA 17</text><text x="450" y="151" fill="#ebdbb2" font-family="Segoe UI,Arial,sans-serif" font-size="13" text-anchor="middle">Spring Ecosystem</text></g>
+  <g class="sat"><rect x="54" y="97" width="160" height="76" rx="15" fill="#3c3836" stroke="#458588"/><text x="134" y="127" fill="#83a598" font-family="Consolas,monospace" font-size="13" font-weight="700" text-anchor="middle">REAL-TIME</text><text x="134" y="151" fill="#d5c4a1" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">Netty · WebFlux</text></g>
+  <g class="sat d2"><rect x="294" y="26" width="150" height="62" rx="14" fill="#3c3836" stroke="#d65d0e"/><text x="369" y="52" fill="#fe8019" font-family="Consolas,monospace" font-size="12" font-weight="700" text-anchor="middle">DATA</text><text x="369" y="72" fill="#d5c4a1" font-family="Segoe UI,Arial,sans-serif" font-size="10" text-anchor="middle">SQL · Redis · MQ</text></g>
+  <g class="sat d3"><rect x="456" y="182" width="160" height="62" rx="14" fill="#3c3836" stroke="#b8bb26"/><text x="536" y="208" fill="#b8bb26" font-family="Consolas,monospace" font-size="12" font-weight="700" text-anchor="middle">CLIENTS</text><text x="536" y="228" fill="#d5c4a1" font-family="Segoe UI,Arial,sans-serif" font-size="10" text-anchor="middle">Vue · Electron · Android</text></g>
+  <g class="sat d4"><rect x="686" y="97" width="160" height="76" rx="15" fill="#3c3836" stroke="#8ec07c"/><text x="766" y="127" fill="#8ec07c" font-family="Consolas,monospace" font-size="13" font-weight="700" text-anchor="middle">DELIVERY</text><text x="766" y="151" fill="#d5c4a1" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">Docker · CI · Observe</text></g>
+</svg>
