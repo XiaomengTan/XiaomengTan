@@ -1,12 +1,10 @@
-# XiaomengTan
+<p align="center">
+  <img src="./assets/profile-dashboard.svg" width="100%" alt="Xiaomeng Tan 的技术方向与工程实践概览">
+</p>
 
 Java developer, system architect, independent builder.
 
 Building distributed systems and AI-powered products that occasionally behave as designed.
-
-<p align="center">
-  <img src="./assets/profile-dashboard.svg" width="100%" alt="Xiaomeng Tan 的技术方向与工程实践概览">
-</p>
 
 Currently working on:
 
